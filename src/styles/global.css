@@ -43,7 +43,7 @@ body {
     & other STYLES for text
 ========================== */
 
-/* DEFAULT METAFUND CSS VALUES */
+/* DEFAULT METAFUND CSS VALUES HEADINGS */
 
 h1 {
   font-family: 'Sora';
@@ -80,3 +80,14 @@ h5 {
   font-size: 14px;
   line-height: 150%;
 }
+
+
+/* DEFAULT METAFUND CSS VALUES TEXT */
+
+text1 {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }

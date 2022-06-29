@@ -16,12 +16,14 @@
 
 <main>
 	<div id="content">
-		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img src="/static/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
-		<h1 class="mainTitle">{content_en.title}</h1>
+		<div class="contentDivLeft">
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src="/src/static/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
+			<h1>{content_en.title}</h1>
+			<text1>{content_en.subtitle}</text1>
+		</div>
 	</div>
 	<div id="sad"><p>Sad</p></div>
-	<div id="confused"><p>Confused</p></div>
 </main>
 
 <!-- ===================
@@ -32,7 +34,17 @@
 		background-color: #191032;
 	}
 
-	.mainTitle {
+	.contentDivLeft {
+		padding: 400px;
+		width: 1350px;
+	}
+
+	h1 {
+		color: white;
+		text-align: left;
+	}
+
+	text1 {
 		color: white;
 	}
 
@@ -40,16 +52,15 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		text-align: center;
 	}
 
 	#content {
-		order: 2;
+		order: 1;
 		flex-grow: 1;
 	}
 
 	#sad {
-		order: 3;
+		order: 2;
 		flex-grow: 10;
 	}
 </style>
