@@ -17,7 +17,7 @@
 <main>
 	<div id="content">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img src="/static/favicon.png" alt="MetaFund Logo" width="170" height="32" />
+		<img src="/static/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
 		<h1 class="mainTitle">{content_en.title}</h1>
 	</div>
 	<div id="sad"><p>Sad</p></div>
