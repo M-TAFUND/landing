@@ -5,6 +5,7 @@
 	//	import DefaultPage from '$lib/components/default/default.svelte';
 	// import { Default } from '$lib/components/default/default.svelte';
 	import contentJson from '$lib/content_en.json';
+	import '../styles/global.css';
 
 	let content_en = contentJson;
 </script>
