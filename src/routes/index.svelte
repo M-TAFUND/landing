@@ -50,6 +50,7 @@
 	}
 
 	main {
+		overflow: hidden;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
