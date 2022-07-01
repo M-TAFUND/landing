@@ -13,17 +13,18 @@
 <!-- ===================
 	COMPONENT HTML 
 =================== -->
-
+<top>
+	<a id="cool"><p /></a>
+</top>
 <main>
 	<div id="content">
-		<div class="contentDivLeft">
-			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src="/assets/img/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
-			<h1>{content_en.title}</h1>
-			<text1>{content_en.subtitle}</text1>
-		</div>
+		<!-- svelte-ignore a11y-img-redundant-alt -->
+		<img src="/assets/img/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
+		<h1>{content_en.title}</h1>
+		<text1>{content_en.subtitle}</text1>
 	</div>
-	<div id="sad"><p>Sad</p></div>
+	<div id="sad"><p /></div>
+	<div id="happy" />
 </main>
 
 <!-- ===================
@@ -34,9 +35,9 @@
 		background-color: #191032;
 	}
 
-	.contentDivLeft {
-		padding: 400px;
-		width: 1350px;
+	top a#cool {
+		order: 1;
+		flex-grow: 1;
 	}
 
 	h1 {
@@ -55,12 +56,24 @@
 	}
 
 	#content {
+		padding: 400px;
+		max-width: 1400px;
 		order: 1;
 		flex-grow: 1;
 	}
 
 	#sad {
+		margin-top: 180px;
 		order: 2;
+		flex-grow: 10;
+		/* Gradient/VioletGradient */
+
+		background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%);
+	}
+
+	#happy {
+		margin-left: -100px;
+		order: 3;
 		flex-grow: 10;
 	}
 </style>
