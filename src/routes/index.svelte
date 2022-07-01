@@ -18,7 +18,7 @@
 	<div id="content">
 		<div class="contentDivLeft">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src="/src/static/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
+			<img src="/assets/img/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" />
 			<h1>{content_en.title}</h1>
 			<text1>{content_en.subtitle}</text1>
 		</div>
