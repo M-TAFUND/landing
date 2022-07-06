@@ -278,5 +278,84 @@
 			background-repeat: no-repeat;
 			background-size: 200%;
 		}
+
+		/* TABLET RESOLUTIONS */
+
+		/*Tablet CSS 320px*/
+
+		@media only screen and (min-width: 1024px) and (max-width: 768px) {
+			top #cool {
+				display: none;
+				order: 1;
+				flex-grow: 1;
+			}
+
+			main {
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+			}
+
+			#content {
+				width: 100%;
+				height: 0px;
+				order: 1;
+				flex-grow: 1;
+			}
+
+			#awesome {
+				order: 2;
+				flex-grow: 1;
+				padding-left: 25px;
+				padding-right: 25px;
+				margin-top: -910px;
+				width: 100%;
+			}
+
+			#satisfied {
+				display: hidden;
+				order: 3;
+				flex-grow: 1;
+			}
+
+			#sad {
+				order: 4;
+				flex-grow: 10;
+				margin-left: 25px;
+				margin-right: 25px;
+				min-width: 262px;
+				max-width: 600px;
+				height: 400px;
+				/* Gradient/VioletGradient */
+
+				background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%);
+			}
+
+			#happy {
+				display: hidden;
+				order: 5;
+				flex-grow: 10;
+			}
+
+			h1 {
+				font-size: 28px;
+				line-height: 40px;
+			}
+
+			text1 {
+				font-size: 14px;
+				line-height: 28px;
+			}
+
+			#github_button {
+				margin-bottom: 70px;
+			}
+
+			#logo_cover {
+				background-position: right -150px top -150px;
+				background-repeat: no-repeat;
+				background-size: 200%;
+			}
+		}
 	}
 </style>
