@@ -67,9 +67,13 @@
 		margin-top: 180px;
 		order: 2;
 		flex-grow: 10;
+		background-image: url('/assets/img/metafund_logo.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		/* Gradient/VioletGradient */
 
-		background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%);
+		/* background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%); */
 	}
 
 	#happy {
