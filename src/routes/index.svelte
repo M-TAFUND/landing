@@ -132,11 +132,59 @@
 
 	/* DESKTOP RESOLUTIONS */
 
-	@media only screen and (min-width: 500px) and (max-width: 1550px) {
+	/* 500 x 1550 */
+
+	@media only screen and (min-width: 1316px) and (max-width: 1550px) {
 		#logo_cover {
 			background-position: right -160px top -160px;
 			background-repeat: no-repeat;
 			background-size: auto;
+		}
+	}
+
+	/* 500 x 1550 */
+
+	@media only screen and (min-width: 500px) and (max-width: 1316px) {
+		top #cool {
+			display: hidden;
+			width: 100%;
+			order: 1;
+			flex-grow: 1;
+		}
+
+		main {
+			overflow: hidden;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: space-around;
+		}
+
+		#awesome {
+			order: 1;
+			flex-grow: 1;
+			width: 100%;
+			padding: 50px;
+		}
+
+		#satisfied {
+			display: hidden;
+			order: 3;
+			flex-grow: 1;
+		}
+
+		#sad {
+			order: 4;
+			flex-grow: 10;
+			width: 100%;
+			/* Gradient/VioletGradient */
+
+			background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%);
+		}
+
+		#happy {
+			display: hidden;
+			order: 5;
+			flex-grow: 10;
 		}
 	}
 </style>
