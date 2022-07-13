@@ -21,7 +21,7 @@
 	<div id="awesome">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<div id="logo_metafund">
-			<a href="https://metafund.vision" target="_blank">
+			<a href="https://www.metafund.vision">
 				<img src="/assets/img/metafund_logo.svg" alt="MetaFund Logo" width="170" height="32" /></a
 			>
 		</div>
