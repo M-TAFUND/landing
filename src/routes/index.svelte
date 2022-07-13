@@ -54,8 +54,8 @@
 	}
 
 	top #cool {
-		min-height: 220px;
-		max-height: 500px;
+		position: initial;
+		margin-bottom: 9%;
 		order: 1;
 		flex-grow: 1;
 	}
@@ -135,7 +135,7 @@
 
 	/* DESKTOP RESOLUTIONS */
 
-	/* 500 x 1550 */
+	/* 1316px x 1550px */
 
 	@media only screen and (min-width: 1316px) and (max-width: 1550px) {
 		#logo_cover {
@@ -145,17 +145,17 @@
 		}
 	}
 
-	/* 500 x 1550 */
+	/* 500px x 1315px */
 
-	@media only screen and (min-width: 500px) and (max-width: 1316px) {
+	@media only screen and (min-width: 500px) and (max-width: 1315px) {
 		top #cool {
-			display: none;
 			order: 1;
 			flex-grow: 1;
+			margin-bottom: 20%;
 		}
 
 		main {
-			position: fixed;
+			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -166,7 +166,7 @@
 
 		#content {
 			width: 100%;
-			height: 0px;
+			/* height: 0px; */
 			order: 1;
 			flex-grow: 1;
 		}
@@ -174,8 +174,12 @@
 		#awesome {
 			order: 2;
 			flex-grow: 1;
-			padding: 50px;
-			margin-top: -800px;
+			margin-top: -500px;
+		}
+
+		#github_button {
+			margin-top: 50px;
+			margin-bottom: 70px;
 		}
 
 		#satisfied {
@@ -204,8 +208,8 @@
 
 	/* MOBILE RESOLUTIONS */
 
-	/*Mobile CSS 768px*/
-	@media only screen and (max-width: 768px) {
+	/*Mobile CSS 499px*/
+	@media only screen and (max-width: 499px) {
 		top #cool {
 			display: none;
 			order: 1;
@@ -277,85 +281,6 @@
 			background-position: right -150px top -150px;
 			background-repeat: no-repeat;
 			background-size: 200%;
-		}
-
-		/* TABLET RESOLUTIONS */
-
-		/*Tablet CSS 320px*/
-
-		@media only screen and (min-width: 1024px) and (max-width: 768px) {
-			top #cool {
-				display: none;
-				order: 1;
-				flex-grow: 1;
-			}
-
-			main {
-				overflow: hidden;
-				display: flex;
-				flex-direction: column;
-			}
-
-			#content {
-				width: 100%;
-				height: 0px;
-				order: 1;
-				flex-grow: 1;
-			}
-
-			#awesome {
-				order: 2;
-				flex-grow: 1;
-				padding-left: 25px;
-				padding-right: 25px;
-				margin-top: -910px;
-				width: 100%;
-			}
-
-			#satisfied {
-				display: hidden;
-				order: 3;
-				flex-grow: 1;
-			}
-
-			#sad {
-				order: 4;
-				flex-grow: 10;
-				margin-left: 25px;
-				margin-right: 25px;
-				min-width: 262px;
-				max-width: 600px;
-				height: 400px;
-				/* Gradient/VioletGradient */
-
-				background: linear-gradient(180deg, #5722c9 0%, #8653f4 100%);
-			}
-
-			#happy {
-				display: hidden;
-				order: 5;
-				flex-grow: 10;
-			}
-
-			h1 {
-				font-size: 28px;
-				line-height: 40px;
-			}
-
-			text1 {
-				font-size: 14px;
-				line-height: 28px;
-			}
-
-			#github_button {
-				margin-bottom: 70px;
-			}
-
-			#logo_cover {
-				background-position: right -150px top -150px;
-				background-repeat: no-repeat;
-				background-size: 200%;
-			}
 		}
 	}
 </style>
